@@ -1,0 +1,26 @@
+---
+galaxy_info:
+  author: Andrew Rothstein
+  description: a role to download and install the docker binaries
+  company: BlackRock
+  license:
+    - MIT
+  min_ansible_version: 2.0
+  platforms:
+    - name: EL
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags:
+    - development
+
+dependencies:
+  - role: andrewrothstein.unarchive-deps
+    version: v1.0.3
+
+  

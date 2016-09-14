@@ -1,0 +1,5 @@
+---
+docker_binaries_mirror: https://get.docker.com/builds
+docker_binaries_ver: '1.12.0'
+docker_binaries_install_dir: /usr/local/bin
+

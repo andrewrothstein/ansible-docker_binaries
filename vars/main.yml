@@ -1,0 +1,5 @@
+---
+docker_binaries_name: 'docker-{{docker_binaries_ver}}'
+docker_binaries_tgz: '{{docker_binaries_name}}.tgz'
+docker_binaries_url: '{{docker_binaries_mirror}}/{{ansible_system}}/{{ansible_architecture}}/{{docker_binaries_tgz}}'
+
