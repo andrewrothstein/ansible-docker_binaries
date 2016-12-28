@@ -6,6 +6,7 @@
     url={{docker_binaries_url}}
     dest=/tmp/{{docker_binaries_tgz}}
     mode=0644
+    checksum={{docker_binaries_checksum}}
 
 - name: mkdir versioned target dir
   become: yes

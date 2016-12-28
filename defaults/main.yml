@@ -1,5 +1,6 @@
 ---
 docker_binaries_mirror: https://get.docker.com/builds
-docker_binaries_ver: '1.12.1'
+docker_binaries_ver: '1.12.5'
+docker_binaries_checksum: sha256:0058867ac46a1eba283e2441b1bb5455df846144f9d9ba079e97655399d4a2c6
 docker_binaries_install_dir: /usr/local/bin
 
