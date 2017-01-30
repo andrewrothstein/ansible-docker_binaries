@@ -15,7 +15,10 @@ galaxy_info:
         - all
     - name: Ubuntu
       versions:
-        - xenial
+        - all
+    - name: Alpine
+      versions:
+        - all
   galaxy_tags:
     - docker
     - containers
