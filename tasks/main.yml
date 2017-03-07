@@ -2,27 +2,27 @@
 - name: download docker binaries...
   become: yes
   become_user: root
-  get_url: >-
-    url={{docker_binaries_url}}
-    dest=/tmp/{{docker_binaries_tgz}}
-    mode=0644
-    checksum={{docker_binaries_checksum}}
+  get_url:
+    url: '{{docker_binaries_url}}'
+    dest: /tmp/{{docker_binaries_tgz}}
+    mode: 0644
+    checksum: '{{docker_binaries_checksum}}'
 
 - name: mkdir versioned target dir
   become: yes
   become_user: root
-  file: >-
-    path={{docker_binaries_install_dir}}/{{docker_binaries_name}}
-    state=directory
-    mode=0755
+  file:
+    path: '{{docker_binaries_install_dir}}/{{docker_binaries_name}}'
+    state: directory
+    mode: 0755
     
 - name: unarchive docker binaries...
   become: yes
   become_user: root
-  unarchive: >-
-    copy=no
-    src=/tmp/{{docker_binaries_tgz}}
-    dest={{docker_binaries_install_dir}}/{{docker_binaries_name}}
+  unarchive:
+    copy: no
+    src: /tmp/{{docker_binaries_tgz}}
+    dest: '{{docker_binaries_install_dir}}/{{docker_binaries_name}}'
 
 - name: link docker dir
   become: yes
@@ -35,7 +35,7 @@
     - dockerd
     - docker-proxy
     - docker-runc
-  file: >-
-    src={{docker_binaries_install_dir}}/{{docker_binaries_name}}/docker/{{item}}
-    dest={{docker_binaries_install_dir}}/{{item}}
-    state=link
+  file:
+    src: '{{docker_binaries_install_dir}}/{{docker_binaries_name}}/docker/{{item}}'
+    dest: '{{docker_binaries_install_dir}}/{{item}}'
+    state: link
