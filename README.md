@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-docker-binaries.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-docker-binaries)
 andrewrothstein.docker-binaries
 ===============================
 

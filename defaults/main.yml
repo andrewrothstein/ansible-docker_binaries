@@ -1,6 +1,6 @@
 ---
 docker_binaries_mirror: https://get.docker.com/builds
-docker_binaries_ver: '17.03.0-ce'
-docker_binaries_checksum: sha256:4a9766d99c6818b2d54dc302db3c9f7b352ad0a80a2dc179ec164a3ba29c2d3e
+docker_binaries_ver: '17.03.1-ce'
+docker_binaries_checksum: sha256:820d13b5699b5df63f7032c8517a5f118a44e2be548dd03271a86656a544af55
 docker_binaries_install_dir: /usr/local/bin
 
