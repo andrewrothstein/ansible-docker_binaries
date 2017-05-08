@@ -1,6 +1,6 @@
-[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-docker-binaries.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-docker-binaries)
 andrewrothstein.docker-binaries
 ===============================
+[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-docker-binaries.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-docker-binaries)
 
 Simple role to install the docker binaries. Does zero configuration.
 
