@@ -1,8 +1,8 @@
 andrewrothstein.docker-binaries
 ===============================
-[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-docker-binaries.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-docker-binaries)
+[![Build Status](https://travis-ci.org/andrewrothstein/ansible-docker-binaries.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-docker-binaries)
 
-Simple role to install the docker binaries. Does zero configuration.
+Install the docker binaries and bash completions. Does zero configuration.
 
 Requirements
 ------------
