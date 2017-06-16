@@ -39,3 +39,11 @@
     src: '{{docker_binaries_install_dir}}/{{docker_binaries_name}}/docker/{{item}}'
     dest: '{{docker_binaries_install_dir}}/{{item}}'
     state: link
+
+- name: cleanup...
+  become: yes
+  become_user: root
+  when: docker_binaries_cleanup
+  file:
+    path: /tmp/{{docker_binaries_tgz}}
+    state: absent
