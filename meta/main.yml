@@ -27,5 +27,7 @@ galaxy_info:
     - containers
 
 dependencies:
-  - role: andrewrothstein.unarchive-deps
+  - src: andrewrothstein.unarchive-deps
     version: v1.0.8
+  - src: andrewrothstein.bash
+    version: v1.0.4

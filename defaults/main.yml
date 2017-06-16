@@ -4,4 +4,6 @@ docker_binaries_ver: '17.05.0-ce'
 docker_binaries_checksum: sha256:340e0b5a009ba70e1b644136b94d13824db0aeb52e09071410f35a95d94316d9
 docker_binaries_install_dir: /usr/local/bin
 
+docker_binaries_bash_completion_d: /etc/bash_completion.d
+
 docker_binaries_cleanup: False
