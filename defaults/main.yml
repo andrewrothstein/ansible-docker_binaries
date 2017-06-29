@@ -1,9 +1,7 @@
 ---
-docker_binaries_mirror: https://get.docker.com/builds
-docker_binaries_ver: '17.05.0-ce'
-docker_binaries_checksum: sha256:340e0b5a009ba70e1b644136b94d13824db0aeb52e09071410f35a95d94316d9
+docker_binaries_mirror: https://download.docker.com
+docker_binaries_ver: '17.06.0-ce'
+docker_binaries_checksum: sha256:e582486c9db0f4229deba9f8517145f8af6c5fae7a1243e6b07876bd3e706620
 docker_binaries_install_dir: /usr/local/bin
-
-docker_binaries_bash_completion_d: /etc/bash_completion.d
 
 docker_binaries_cleanup: False

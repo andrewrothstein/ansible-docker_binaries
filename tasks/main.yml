@@ -15,7 +15,7 @@
     path: '{{docker_binaries_install_dir}}/{{docker_binaries_name}}'
     state: directory
     mode: 0755
-    
+
 - name: unarchive docker binaries...
   become: yes
   become_user: root
@@ -40,14 +40,6 @@
     dest: '{{docker_binaries_install_dir}}/{{item}}'
     state: link
 
-- name: install bash completions...
-  become: yes
-  become_user: root
-  get_url:
-    url: https://raw.githubusercontent.com/docker/docker-ce/master/components/engine/contrib/completion/bash/docker
-    dest: '{{docker_binaries_bash_completion_d}}/docker.sh'
-    mode: 0644
-    
 - name: cleanup...
   become: yes
   become_user: root
