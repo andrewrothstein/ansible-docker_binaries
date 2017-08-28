@@ -1,7 +1,12 @@
 ---
 docker_binaries_mirror: https://download.docker.com
-docker_binaries_ver: '17.06.0-ce'
-docker_binaries_checksum: sha256:e582486c9db0f4229deba9f8517145f8af6c5fae7a1243e6b07876bd3e706620
+docker_binaries_ver: '17.06.1-ce'
+---
+docker_binaries_name: 'docker-{{docker_binaries_ver}}'
+docker_binaries_tgz: '{{docker_binaries_name}}.tgz'
+# https://download.docker.com/linux/static/stable/x86_64/docker-17.06.1-ce.tgz
+docker_binaries_url: '{{docker_binaries_mirror}}/{{ansible_system | lower}}/static/stable/{{ansible_architecture}}/{{docker_binaries_tgz}}'
+docker_binaries_checksum: sha256:e35fe12806eadbb7eb8aa63e3dfb531bda5f901cd2c14ac9cdcd54df6caed697
 docker_binaries_install_dir: /usr/local/bin
 
 docker_binaries_cleanup: False
