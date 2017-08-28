@@ -1,7 +1,6 @@
 ---
 docker_binaries_mirror: https://download.docker.com
 docker_binaries_ver: '17.06.1-ce'
----
 docker_binaries_name: 'docker-{{docker_binaries_ver}}'
 docker_binaries_tgz: '{{docker_binaries_name}}.tgz'
 # https://download.docker.com/linux/static/stable/x86_64/docker-17.06.1-ce.tgz
