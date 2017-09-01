@@ -33,6 +33,7 @@
     - docker-containerd-ctr
     - docker-containerd-shim
     - dockerd
+    - docker-init
     - docker-proxy
     - docker-runc
   file:
