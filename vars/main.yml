@@ -2,6 +2,6 @@
 docker_binaries_name: 'docker-{{docker_binaries_ver}}'
 docker_binaries_tgz: '{{docker_binaries_name}}.tgz'
 
-# https://download.docker.com/linux/static/edge/x86_64/docker-17.07.0-ce.tgz
+# https://download.docker.com/linux/static/edge/x86_64/docker-17.10.0-ce.tgz
 docker_binaries_url: '{{docker_binaries_mirror}}/{{ansible_system | lower}}/static/{{docker_binaries_channel}}/{{ansible_architecture}}/{{docker_binaries_tgz}}'
 

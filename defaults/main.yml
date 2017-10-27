@@ -1,10 +1,10 @@
 ---
 docker_binaries_mirror: https://download.docker.com
-docker_binaries_ver: '17.07.0-ce'
+docker_binaries_ver: '17.10.0-ce'
 docker_binaries_name: 'docker-{{docker_binaries_ver}}'
 docker_binaries_tgz: '{{docker_binaries_name}}.tgz'
 docker_binaries_channel: edge
-docker_binaries_checksum: sha256:18b482c92553e1204e4a48732db8988a763d61a9e2b9b39b95c280e3d57db77b
+docker_binaries_checksum: sha256:db10b851c793845ec42d1af7be28c6cb2844d9345246607de990f429064a623e
 docker_binaries_install_dir: /usr/local/bin
 
 docker_binaries_cleanup: False
