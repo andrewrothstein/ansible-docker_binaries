@@ -1,30 +1,46 @@
 ---
-- name: download docker binaries...
+- name: check for docker binaries installation...
   become: yes
-  become_user: root
-  get_url:
-    url: '{{docker_binaries_url}}'
-    dest: /tmp/{{docker_binaries_tgz}}
-    mode: 0644
-    checksum: '{{docker_binaries_checksum}}'
+  stat:
+    path: '{{docker_binaries_ver_install_dir}}'
+  changed_when: false
+  register: docker_binaries_bin_dir
+- when: not docker_binaries_bin_dir.stat.exists
+  block:
+    - name: download docker binaries...
+      become: yes
+      become_user: root
+      get_url:
+        url: '{{docker_binaries_url}}'
+        dest: /tmp/{{docker_binaries_tgz}}
+        mode: 0644
+        checksum: '{{docker_binaries_checksum}}'
 
-- name: mkdir versioned target dir
-  become: yes
-  become_user: root
-  file:
-    path: '{{docker_binaries_install_dir}}/{{docker_binaries_name}}'
-    state: directory
-    mode: 0755
+    - name: mkdir versioned target dir
+      become: yes
+      become_user: root
+      file:
+        path: '{{docker_binaries_ver_install_dir}}'
+        state: directory
+        mode: 0755
 
-- name: unarchive docker binaries...
-  become: yes
-  become_user: root
-  unarchive:
-    remote_src: yes
-    src: /tmp/{{docker_binaries_tgz}}
-    dest: '{{docker_binaries_install_dir}}/{{docker_binaries_name}}'
+    - name: unarchive docker binaries...
+      become: yes
+      become_user: root
+      unarchive:
+        remote_src: yes
+        src: /tmp/{{docker_binaries_tgz}}
+        dest: '{{docker_binaries_ver_install_dir}}'
+        creates: '{{docker_binaries_ver_install_dir}}/docker'
+  always:
+    - name: cleanup...
+      become: yes
+      become_user: root
+      file:
+        path: /tmp/{{docker_binaries_tgz}}
+        state: absent
 
-- name: link docker dir
+- name: link docker binaries
   become: yes
   become_user: root
   with_items:
@@ -37,14 +53,6 @@
     - docker-proxy
     - docker-runc
   file:
-    src: '{{docker_binaries_install_dir}}/{{docker_binaries_name}}/docker/{{item}}'
+    src: '{{docker_binaries_ver_install_dir}}/docker/{{item}}'
     dest: '{{docker_binaries_install_dir}}/{{item}}'
     state: link
-
-- name: cleanup...
-  become: yes
-  become_user: root
-  when: docker_binaries_cleanup
-  file:
-    path: /tmp/{{docker_binaries_tgz}}
-    state: absent
