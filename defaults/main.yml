@@ -1,6 +1,12 @@
 ---
 docker_binaries_mirror: https://download.docker.com
-docker_binaries_ver: '17.11.0-ce'
-docker_binaries_channel: edge
-docker_binaries_checksum: sha256:34cecf11522767850193c52fda22f461ed4d9c77b393ef8d1bede51e2173a406
+docker_binaries_ver: '17.12.0'
+docker_binaries_edition: ce
+docker_binaries_channel: stable
+docker_binaries_checksums:
+  '17.11.0':
+    ce: sha256:34cecf11522767850193c52fda22f461ed4d9c77b393ef8d1bede51e2173a406
+  '17.12.0':
+    # https://download.docker.com/linux/static/stable/x86_64/docker-17.12.0-ce.tgz
+    ce: sha256:692e1c72937f6214b1038def84463018d8e320c8eaf8530546c84c2f8f9c767d
 docker_binaries_install_dir: /usr/local/bin
