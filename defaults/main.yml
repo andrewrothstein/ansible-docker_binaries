@@ -1,7 +1,7 @@
 ---
 docker_binaries_mirror: https://download.docker.com
 
-docker_binaries_ver: '18.05.0'
+docker_binaries_ver: '18.06.0'
 docker_binaries_edition: ce
 docker_binaries_channel: edge
 
@@ -26,6 +26,9 @@ docker_binaries_checksums:
   '18.05.0':
     # https://download.docker.com/linux/static/edge/x86_64/docker-18.05.0-ce.tgz
     ce: sha256:73bfe6b53949fa01168e9b5688d7a0f8ab7987b94911ca09e0cceb11aff14fab
+  '18.06.0':
+    # https://download.docker.com/linux/static/edge/x86_64/docker-18.06.0-ce.tgz
+    ce: sha256:1c2fa625496465c68b856db0ba850eaad7a16221ca153661ca718de4a2217705
     
 docker_binaries_install_dir: /usr/local/bin
 
