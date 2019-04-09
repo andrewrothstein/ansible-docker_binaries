@@ -1,34 +1,14 @@
 ---
 docker_binaries_mirror: https://download.docker.com
 
-docker_binaries_ver: '18.06.0'
-docker_binaries_edition: ce
-docker_binaries_channel: edge
+docker_binaries_ver: '18.09.4'
+docker_binaries_channel: stable
+docker_binaries_platform: linux
 
 docker_binaries_checksums:
-  '17.11.0':
-    ce: sha256:34cecf11522767850193c52fda22f461ed4d9c77b393ef8d1bede51e2173a406
-  '17.12.0':
-    # https://download.docker.com/linux/static/stable/x86_64/docker-17.12.0-ce.tgz
-    ce: sha256:692e1c72937f6214b1038def84463018d8e320c8eaf8530546c84c2f8f9c767d
-  '18.01.0':
-    # https://download.docker.com/linux/static/edge/x86_64/docker-18.01.0-ce.tgz
-    ce: sha256:c61ec5b86a721c65371a38e8fbf831e04b58c6e845289282dfa596790ccae8da
-  '18.02.0':
-    # https://download.docker.com/linux/static/edge/x86_64/docker-18.02.0-ce.tgz
-    ce: sha256:435f6f234a7f92a70630ee6c199a71663a8f8bf8d101d0f921f2ed457817ba04
-  '18.03.0':
-    # https://download.docker.com/linux/static/edge/x86_64/docker-18.03.0-ce.tgz
-    ce: sha256:e5dff6245172081dbf14285dafe4dede761f8bc1750310156b89928dbf56a9ee
-  '18.04.0':
-    # https://download.docker.com/linux/static/edge/x86_64/docker-18.04.0-ce.tgz
-    ce: sha256:1288757b3b0fb13a4a6342efeae54947afb0407f247b9cff240afe9f1ae91cee
-  '18.05.0':
-    # https://download.docker.com/linux/static/edge/x86_64/docker-18.05.0-ce.tgz
-    ce: sha256:73bfe6b53949fa01168e9b5688d7a0f8ab7987b94911ca09e0cceb11aff14fab
-  '18.06.0':
-    # https://download.docker.com/linux/static/edge/x86_64/docker-18.06.0-ce.tgz
-    ce: sha256:1c2fa625496465c68b856db0ba850eaad7a16221ca153661ca718de4a2217705
+  # https://download.docker.com/linux/static/stable/x86_64/docker-18.09.4.tgz
+  '18.09.4':
+    linux: sha256:7baf380a9d503286b3745114e0d8e265897edd9642747b1992459e550fc5c827
     
 docker_binaries_install_dir: /usr/local/bin
 
