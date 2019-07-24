@@ -1,7 +1,7 @@
 ---
 docker_binaries_mirror: https://download.docker.com
 
-docker_binaries_ver: '18.09.8'
+docker_binaries_ver: '19.03.0'
 docker_binaries_channel: stable
 docker_binaries_os: linux
 docker_binaries_platform: x86_64
@@ -45,5 +45,18 @@ docker_binaries_checksums:
     mac:
       # https://download.docker.com/mac/static/stable/x86_64/docker-18.09.8.tgz
       x86_64: sha256:74e80600f478bf5dc9d85ba7c3ba5106251df2872bdbe54a1778c1a35a7eb4d6
+  '19.03.0':
+    linux:
+      # https://download.docker.com/linux/static/stable/aarch64/docker-19.03.0.tgz
+      aarch64: sha256:88bcbe5898b999d67cf158d5d57dd8e3d905a6cdbca669e696b6ff7554057d21
+      # https://download.docker.com/linux/static/stable/armel/docker-19.03.0.tgz
+      armel: sha256:6203c75c835f355fea277bf8b1f6b684ee8afc5114c5966a160873166487af4b
+      # https://download.docker.com/linux/static/stable/armhf/docker-19.03.0.tgz
+      armhf: sha256:62a613cc67c099f50401e108953fd73101f3b20cc5ab0e70da76a58d7c5df04a
+      # https://download.docker.com/linux/static/stable/x86_64/docker-19.03.0.tgz
+      x86_64: sha256:b7bb0c3610b3f6ee87457dfb440968dbcc3537198c3d6e2468fcf90819855d6f
+    mac:
+      # https://download.docker.com/mac/static/stable/x86_64/docker-19.03.0.tgz
+      x86_64: sha256:8ca3b8321c3255e29e4589cb57c1ae217c7fb7c11b2f85da0c3344b50e880cc1
 
 docker_binaries_install_dir: /usr/local/bin
