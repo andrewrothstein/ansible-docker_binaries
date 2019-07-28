@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER='19.03.0'
+VER='19.03.1'
 DIR=~/Downloads
 MIRROR=https://download.docker.com
 
