@@ -1,7 +1,7 @@
 ---
 docker_binaries_mirror: https://download.docker.com
 
-docker_binaries_ver: '19.03.1'
+docker_binaries_ver: '19.03.2'
 docker_binaries_channel: stable
 docker_binaries_os: linux
 docker_binaries_platform: x86_64
@@ -71,5 +71,30 @@ docker_binaries_checksums:
     mac:
       # https://download.docker.com/mac/static/stable/x86_64/docker-19.03.1.tgz
       x86_64: sha256:8c30cee81e90f6d462823201e62243ceb4be954ec6a4c6e5391ebece3b10e73a
+  '19.03.2':
+    linux:
+      # https://download.docker.com/linux/static/stable/aarch64/docker-19.03.2.tgz
+      aarch64: sha256:3bd1bbd2e2eebf0083d684f02217e9215c1475f4ffecd28f824efc2e8585d670
+      # https://download.docker.com/linux/static/stable/armel/docker-19.03.2.tgz
+      armel: sha256:12ed198b3710d77626c63f4e384e9bb58bdf87bc0b24a89c1dacd00b429a0f6b
+      # https://download.docker.com/linux/static/stable/armhf/docker-19.03.2.tgz
+      armhf: sha256:248fdb99a5643ce8bf48a329b1dc60f58a2488c215ea8fdbdf489065c0aa71d1
+      # https://download.docker.com/linux/static/stable/x86_64/docker-19.03.2.tgz
+      x86_64: sha256:865038730c79ab48dfed1365ee7627606405c037f46c9ae17c5ec1f487da1375
+    mac:
+      # https://download.docker.com/mac/static/stable/x86_64/docker-19.03.2.tgz
+      x86_64: sha256:22d422da28a6cb090eb74b75eafefde54343aff722e7a50f4d5c5cd6fae07926
+
+docker_binaries_rootless_extras_checksums:
+  '19.03.2':
+    linux:
+      # https://download.docker.com/linux/static/stable/aarch64/docker-rootless-extras-19.03.2.tgz
+      aarch64: sha256:e3557867f0ec41520d3602f34ac4a893c6c4dfaa763d1aa6f9d6778f3b75f34d
+      # https://download.docker.com/linux/static/stable/armel/docker-rootless-extras-19.03.2.tgz
+      armel: sha256:7fe49e2ccae28fa18b5d77bc6ba7f5b70f0359d6d584c390d8b04141d3af7332
+      # https://download.docker.com/linux/static/stable/armhf/docker-rootless-extras-19.03.2.tgz
+      armhf: sha256:f06585793a4b2a14e0bf7699e75fab7a2651407d14b28587f77c19fa214f72b8
+      # https://download.docker.com/linux/static/stable/x86_64/docker-rootless-extras-19.03.2.tgz
+      x86_64: sha256:5804f06de73d6d09f1e4bf36e6c9cbb58ded408cc8dbe88b420fc735cad8041c
 
 docker_binaries_install_dir: /usr/local/bin
