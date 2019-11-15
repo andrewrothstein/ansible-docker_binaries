@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=${1:-19.03.4}
+VER=${1:-19.03.5}
 DIR=~/Downloads
 MIRROR=https://download.docker.com
 
