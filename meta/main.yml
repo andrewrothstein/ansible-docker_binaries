@@ -2,7 +2,7 @@ dependencies:
 - role: andrewrothstein.unarchive-deps
   version: v1.1.2
 - role: andrewrothstein.bash
-  version: v1.1.3
+  version: v1.1.5
 galaxy_info:
   author: Andrew Rothstein
   company: BlackRock
@@ -22,7 +22,8 @@ galaxy_info:
     - all
   - name: Debian
     versions:
-    - jessie
+    - buster
+    - stretch
   - name: Ubuntu
     versions:
     - xenial
