@@ -1,7 +1,7 @@
 ---
 docker_binaries_mirror: https://download.docker.com
 
-docker_binaries_ver: 19.03.11
+docker_binaries_ver: 19.03.13
 docker_binaries_channel: stable
 docker_binaries_os: linux
 docker_binaries_platform: x86_64
@@ -203,6 +203,19 @@ docker_binaries_checksums:
     mac:
       # https://download.docker.com/mac/static/stable/x86_64/docker-19.03.11.tgz
       x86_64: sha256:534fa11d5ccd5554dba735fa6245912e09e8e016cac62ca1f085ed09ae80cc2d
+  '19.03.13':
+    linux:
+      # https://download.docker.com/linux/static/stable/aarch64/docker-19.03.13.tgz
+      aarch64: sha256:bdf080af7d6f383ad80e415e9c1952a63c7038c149dc673b7598bfca4d3311ec
+      # https://download.docker.com/linux/static/stable/armel/docker-19.03.13.tgz
+      armel: sha256:25bcadc1e481df36c8690fbef64c933c099719a01e6f3059c0d3ff06ff785d28
+      # https://download.docker.com/linux/static/stable/armhf/docker-19.03.13.tgz
+      armhf: sha256:b58095c1e9290b96b6e1648be35c17ba8245a7aa935597f334eec39a6134da1b
+      # https://download.docker.com/linux/static/stable/x86_64/docker-19.03.13.tgz
+      x86_64: sha256:ddb13aff1fcdcceb710bf71a210169b9c1abfd7420eeaf42cf7975f8fae2fcc8
+    mac:
+      # https://download.docker.com/mac/static/stable/x86_64/docker-19.03.13.tgz
+      x86_64: sha256:d035d468218c26973710b35101b55dcf82c25d43a0a88aaa9f667b1782ec6ea4
 
 docker_binaries_rootless_extras_checksums:
   '19.03.2':
@@ -305,3 +318,13 @@ docker_binaries_rootless_extras_checksums:
       armhf: sha256:3edd0ed1c5275252556dd52e2406ad6eccbf118e3edf2dbaf2d81c0c54c2aa0d
       # https://download.docker.com/linux/static/stable/x86_64/docker-rootless-extras-19.03.11.tgz
       x86_64: sha256:b21ee1469f5b4b3e2a20af5c0f90d7a95c9130b462fbef3808359f2f6767803f
+  '19.03.13':
+    linux:
+      # https://download.docker.com/linux/static/stable/aarch64/docker-rootless-extras-19.03.13.tgz
+      aarch64: sha256:267b8ca6cfd76719d8706cdf95d549638bd2c2ff648357a87d6774dd47e98b8e
+      # https://download.docker.com/linux/static/stable/armel/docker-rootless-extras-19.03.13.tgz
+      armel: sha256:a9f46905f32967920b7da76d2e32eb43ba16ad7829ec5e8d3afb30f7d752d6f7
+      # https://download.docker.com/linux/static/stable/armhf/docker-rootless-extras-19.03.13.tgz
+      armhf: sha256:07978fb31aa15bc20d93a28a0c08b95de4b4dcf696d3e1f72706b12e92c32d3f
+      # https://download.docker.com/linux/static/stable/x86_64/docker-rootless-extras-19.03.13.tgz
+      x86_64: sha256:b7f0dde9b65fb8a3eb2e6693c413490b4bcefcd1ee2331a1f538be1bef82ded4
