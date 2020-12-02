@@ -1,5 +1,5 @@
 ---
-- name: check for docker binaries installation...
+- name: checking for installation in {{ docker_binaries_ver_install_dir }}
   become: yes
   stat:
     path: '{{ docker_binaries_ver_install_dir }}'
@@ -7,16 +7,16 @@
   register: docker_binaries_bin_dir
 - when: not docker_binaries_bin_dir.stat.exists
   block:
-    - name: download docker binaries...
+    - name: downloading  {{ docker_binaries_url }} to {{ docker_binaries_tmp_tgz }}
       become: yes
       become_user: root
       get_url:
         url: '{{ docker_binaries_url }}'
-        dest: /tmp/{{ docker_binaries_tgz }}
+        dest: '{{ docker_binaries_tmp_tgz }}'
         mode: 0644
         checksum: '{{ docker_binaries_checksum }}'
 
-    - name: mkdir versioned target dir
+    - name: mkdir {{ docker_binaries_ver_install_dir }}
       become: yes
       become_user: root
       file:
@@ -24,23 +24,23 @@
         state: directory
         mode: 0755
 
-    - name: unarchive docker binaries...
+    - name: unarchiving {{ docker_binaries_tmp_tgz }} to {{ docker_binaries_ver_install_dir }}
       become: yes
       become_user: root
       unarchive:
         remote_src: yes
         src: /tmp/{{ docker_binaries_tgz }}
         dest: '{{ docker_binaries_ver_install_dir }}'
-        creates: '{{ docker_binaries_ver_install_dir }}/docker'
+        creates: '{{ docker_binaries_ver_install_subdir }}'
   always:
-    - name: cleanup...
+    - name: rm {{ docker_binaries_tmp_tgz }}
       become: yes
       become_user: root
       file:
-        path: /tmp/{{ docker_binaries_tgz }}
+        path: '{{ docker_binaries_tmp_tgz }}'
         state: absent
 
-- name: link docker binaries
+- name: link docker binaries from {{ docker_binaries_install_dir }} to {{ docker_binaries_ver_install_subdir }}
   become: yes
   become_user: root
   with_items:
@@ -53,6 +53,6 @@
     - docker-init
     - docker
   file:
-    src: '{{ docker_binaries_ver_install_dir }}/docker/{{ item }}'
+    src: '{{ docker_binaries_ver_install_subdir }}/{{ item }}'
     dest: '{{ docker_binaries_install_dir }}/{{ item }}'
     state: link

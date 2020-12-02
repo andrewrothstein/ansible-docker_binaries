@@ -1,8 +1,10 @@
 ---
 docker_binaries_name: 'docker-{{ docker_binaries_ver }}'
 docker_binaries_tgz: '{{ docker_binaries_name }}.tgz'
+docker_binaries_tmp_tgz: /tmp/{{ docker_binaries_tgz }}
 
 docker_binaries_url: '{{ docker_binaries_mirror }}/{{ ansible_system | lower }}/static/{{ docker_binaries_channel }}/{{ ansible_architecture }}/{{ docker_binaries_tgz }}'
 docker_binaries_checksum: '{{ docker_binaries_checksums[docker_binaries_ver][docker_binaries_os][docker_binaries_platform] }}'
 
 docker_binaries_ver_install_dir: '{{ docker_binaries_install_dir }}/{{ docker_binaries_name }}'
+docker_binaries_ver_install_subdir: '{{ docker_binaries_ver_install_dir }}/docker'
