@@ -42,4 +42,4 @@ dl_ver () {
     dl $ver docker-rootless-extras linux x86_64
 }
 
-dl_ver ${1:-20.10.3}
+dl_ver ${1:-20.10.4}
