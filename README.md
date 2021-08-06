@@ -1,6 +1,6 @@
 andrewrothstein.docker-binaries
 ===============================
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-docker-binaries.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-docker-binaries)
+![Build Status](https://github.com/andrewrothstein/ansible-docker-binaries/actions/workflows/build.yml/badge.svg)
 
 Install the docker binaries and bash completions. Does zero configuration.
 
