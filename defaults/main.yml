@@ -466,7 +466,6 @@ docker_binaries_rootless_extras_checksums:
       armhf: sha256:ae01fe344ea6f1e4869cfed286f019b8171eb7a1fd7a79ea8dd9c0518cedd521
       # https://download.docker.com/linux/static/stable/x86_64/docker-rootless-extras-20.10.7.tgz
       x86_64: sha256:c9a5069aa986fc4140094486f68091bc0b20beb185495d76bb8643ec6d6ec4f4
-docker_binaries_checksums:
   '20.10.8':
     linux:
       # https://download.docker.com/linux/static/stable/aarch64/docker-20.10.8.tgz
