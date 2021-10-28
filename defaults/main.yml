@@ -1,7 +1,7 @@
 ---
 docker_binaries_mirror: https://download.docker.com
 
-docker_binaries_ver: 20.10.9
+docker_binaries_ver: 20.10.10
 docker_binaries_channel: stable
 docker_binaries_os: linux
 docker_binaries_platform: x86_64
@@ -492,6 +492,19 @@ docker_binaries_rootless_extras_checksums:
     mac:
       # https://download.docker.com/mac/static/stable/x86_64/docker-20.10.9.tgz
       x86_64: sha256:f045f816579a96a45deef25aaf3fc116257b4fb5782b51265ad863dcae21f879
+  '20.10.10':
+    linux:
+      # https://download.docker.com/linux/static/stable/aarch64/docker-20.10.10.tgz
+      aarch64: sha256:8db47cdcd7ac6e082c9ce83347d8fb99eaa01e04b0c8d94851e8d58f350a3633
+      # https://download.docker.com/linux/static/stable/armel/docker-20.10.10.tgz
+      armel: sha256:8b5eda1547ab8b5e8c0c44caad2989328e654ddb8af5177dd951efa952d46fc5
+      # https://download.docker.com/linux/static/stable/armhf/docker-20.10.10.tgz
+      armhf: sha256:7d4b4136789b63c476820670255eee450ada1ded07ab3f871388bf1ddb2a06c5
+      # https://download.docker.com/linux/static/stable/x86_64/docker-20.10.10.tgz
+      x86_64: sha256:1719446f99cd56e87d0c67019996af4ea859f11891bfd89de2252d6c916ccaaa
+    mac:
+      # https://download.docker.com/mac/static/stable/x86_64/docker-20.10.10.tgz
+      x86_64: sha256:ae643bab679d2c19ceb0dd1c12422762f829e3d9f4135945b1eb50b7a1ad47da
 docker_rootless_extras_checksums:
   '20.10.8':
     linux:
@@ -513,3 +526,13 @@ docker_rootless_extras_checksums:
       armhf: sha256:ef48663cd0ea368e356c6f88af7980af95a27de82227a224d3d33a4e57c68b0e
       # https://download.docker.com/linux/static/stable/x86_64/docker-rootless-extras-20.10.9.tgz
       x86_64: sha256:5c14e2e105cc5355e34f7173792f12d9c26aa4aac38f4b24f7cde7f9b0bfbe73
+  '20.10.10':
+    linux:
+      # https://download.docker.com/linux/static/stable/aarch64/docker-rootless-extras-20.10.10.tgz
+      aarch64: sha256:442c6061bbd3f9c122f42175257678b307211f31f5915523a5bc60fd945910eb
+      # https://download.docker.com/linux/static/stable/armel/docker-rootless-extras-20.10.10.tgz
+      armel: sha256:da4c6e506c818591251510ba9665f01c6f37c7166f133bf11aa1b888e9b83ace
+      # https://download.docker.com/linux/static/stable/armhf/docker-rootless-extras-20.10.10.tgz
+      armhf: sha256:bfc0a0d85e86b3f5a7c502bef68dbdae02f39f8ea3aad49c9fc011a386ee72f7
+      # https://download.docker.com/linux/static/stable/x86_64/docker-rootless-extras-20.10.10.tgz
+      x86_64: sha256:683448bf77e625d198feaec3b28cec2d07e51f310e1172149bdd0558a97c21cf
