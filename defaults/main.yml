@@ -294,6 +294,45 @@ docker_binaries_checksums:
     mac:
       # https://download.docker.com/mac/static/stable/x86_64/docker-20.10.7.tgz
       x86_64: sha256:d2f8c7cb8a80c751cd067a852f838879b40c962f7ccd9db2c3ee9ea828007c24
+  '20.10.8':
+    linux:
+      # https://download.docker.com/linux/static/stable/aarch64/docker-20.10.8.tgz
+      aarch64: sha256:4eb9d5e2adf718cd7ee59f6951715f3113c9c4ee49c75c9efb9747f2c3457b2b
+      # https://download.docker.com/linux/static/stable/armel/docker-20.10.8.tgz
+      armel: sha256:f0c46c6b9c002ed64fcf12b1e4797001b66bce07eab93330c072ee83a0aa0d7b
+      # https://download.docker.com/linux/static/stable/armhf/docker-20.10.8.tgz
+      armhf: sha256:ca6e6f4d6d1a5d59436442990f3dfb43eb4d0d6093b53f134c29386c6b416937
+      # https://download.docker.com/linux/static/stable/x86_64/docker-20.10.8.tgz
+      x86_64: sha256:7ea11ecb100fdc085dbfd9ab1ff380e7f99733c890ed815510a5952e5d6dd7e0
+    mac:
+      # https://download.docker.com/mac/static/stable/x86_64/docker-20.10.8.tgz
+      x86_64: sha256:8d9bec04b5c6245f907db8e17726bcde7433c33ec28a1f395d61c4d1ec959004
+  '20.10.9':
+    linux:
+      # https://download.docker.com/linux/static/stable/aarch64/docker-20.10.9.tgz
+      aarch64: sha256:0259f8b6572f02cf0dafd7388ca0e4adfdbbfaba81cfb1b7443e89fccbed22c7
+      # https://download.docker.com/linux/static/stable/armel/docker-20.10.9.tgz
+      armel: sha256:85ed667aaf34f7f2a1652b1a7a3b8735a0eed799cc2487b2fc3df82f158f9869
+      # https://download.docker.com/linux/static/stable/armhf/docker-20.10.9.tgz
+      armhf: sha256:5670e2b14edad1f34c7062ee26584afb3fa796f30e42571ca4c552e665d31e6d
+      # https://download.docker.com/linux/static/stable/x86_64/docker-20.10.9.tgz
+      x86_64: sha256:caf74e54b58c0b38bb4d96c8f87665f29b684371c9a325562a3904b8c389995e
+    mac:
+      # https://download.docker.com/mac/static/stable/x86_64/docker-20.10.9.tgz
+      x86_64: sha256:f045f816579a96a45deef25aaf3fc116257b4fb5782b51265ad863dcae21f879
+  '20.10.10':
+    linux:
+      # https://download.docker.com/linux/static/stable/aarch64/docker-20.10.10.tgz
+      aarch64: sha256:8db47cdcd7ac6e082c9ce83347d8fb99eaa01e04b0c8d94851e8d58f350a3633
+      # https://download.docker.com/linux/static/stable/armel/docker-20.10.10.tgz
+      armel: sha256:8b5eda1547ab8b5e8c0c44caad2989328e654ddb8af5177dd951efa952d46fc5
+      # https://download.docker.com/linux/static/stable/armhf/docker-20.10.10.tgz
+      armhf: sha256:7d4b4136789b63c476820670255eee450ada1ded07ab3f871388bf1ddb2a06c5
+      # https://download.docker.com/linux/static/stable/x86_64/docker-20.10.10.tgz
+      x86_64: sha256:1719446f99cd56e87d0c67019996af4ea859f11891bfd89de2252d6c916ccaaa
+    mac:
+      # https://download.docker.com/mac/static/stable/x86_64/docker-20.10.10.tgz
+      x86_64: sha256:ae643bab679d2c19ceb0dd1c12422762f829e3d9f4135945b1eb50b7a1ad47da
 
 docker_binaries_rootless_extras_checksums:
   '19.03.2':
@@ -466,46 +505,6 @@ docker_binaries_rootless_extras_checksums:
       armhf: sha256:ae01fe344ea6f1e4869cfed286f019b8171eb7a1fd7a79ea8dd9c0518cedd521
       # https://download.docker.com/linux/static/stable/x86_64/docker-rootless-extras-20.10.7.tgz
       x86_64: sha256:c9a5069aa986fc4140094486f68091bc0b20beb185495d76bb8643ec6d6ec4f4
-  '20.10.8':
-    linux:
-      # https://download.docker.com/linux/static/stable/aarch64/docker-20.10.8.tgz
-      aarch64: sha256:4eb9d5e2adf718cd7ee59f6951715f3113c9c4ee49c75c9efb9747f2c3457b2b
-      # https://download.docker.com/linux/static/stable/armel/docker-20.10.8.tgz
-      armel: sha256:f0c46c6b9c002ed64fcf12b1e4797001b66bce07eab93330c072ee83a0aa0d7b
-      # https://download.docker.com/linux/static/stable/armhf/docker-20.10.8.tgz
-      armhf: sha256:ca6e6f4d6d1a5d59436442990f3dfb43eb4d0d6093b53f134c29386c6b416937
-      # https://download.docker.com/linux/static/stable/x86_64/docker-20.10.8.tgz
-      x86_64: sha256:7ea11ecb100fdc085dbfd9ab1ff380e7f99733c890ed815510a5952e5d6dd7e0
-    mac:
-      # https://download.docker.com/mac/static/stable/x86_64/docker-20.10.8.tgz
-      x86_64: sha256:8d9bec04b5c6245f907db8e17726bcde7433c33ec28a1f395d61c4d1ec959004
-  '20.10.9':
-    linux:
-      # https://download.docker.com/linux/static/stable/aarch64/docker-20.10.9.tgz
-      aarch64: sha256:0259f8b6572f02cf0dafd7388ca0e4adfdbbfaba81cfb1b7443e89fccbed22c7
-      # https://download.docker.com/linux/static/stable/armel/docker-20.10.9.tgz
-      armel: sha256:85ed667aaf34f7f2a1652b1a7a3b8735a0eed799cc2487b2fc3df82f158f9869
-      # https://download.docker.com/linux/static/stable/armhf/docker-20.10.9.tgz
-      armhf: sha256:5670e2b14edad1f34c7062ee26584afb3fa796f30e42571ca4c552e665d31e6d
-      # https://download.docker.com/linux/static/stable/x86_64/docker-20.10.9.tgz
-      x86_64: sha256:caf74e54b58c0b38bb4d96c8f87665f29b684371c9a325562a3904b8c389995e
-    mac:
-      # https://download.docker.com/mac/static/stable/x86_64/docker-20.10.9.tgz
-      x86_64: sha256:f045f816579a96a45deef25aaf3fc116257b4fb5782b51265ad863dcae21f879
-  '20.10.10':
-    linux:
-      # https://download.docker.com/linux/static/stable/aarch64/docker-20.10.10.tgz
-      aarch64: sha256:8db47cdcd7ac6e082c9ce83347d8fb99eaa01e04b0c8d94851e8d58f350a3633
-      # https://download.docker.com/linux/static/stable/armel/docker-20.10.10.tgz
-      armel: sha256:8b5eda1547ab8b5e8c0c44caad2989328e654ddb8af5177dd951efa952d46fc5
-      # https://download.docker.com/linux/static/stable/armhf/docker-20.10.10.tgz
-      armhf: sha256:7d4b4136789b63c476820670255eee450ada1ded07ab3f871388bf1ddb2a06c5
-      # https://download.docker.com/linux/static/stable/x86_64/docker-20.10.10.tgz
-      x86_64: sha256:1719446f99cd56e87d0c67019996af4ea859f11891bfd89de2252d6c916ccaaa
-    mac:
-      # https://download.docker.com/mac/static/stable/x86_64/docker-20.10.10.tgz
-      x86_64: sha256:ae643bab679d2c19ceb0dd1c12422762f829e3d9f4135945b1eb50b7a1ad47da
-docker_rootless_extras_checksums:
   '20.10.8':
     linux:
       # https://download.docker.com/linux/static/stable/aarch64/docker-rootless-extras-20.10.8.tgz
