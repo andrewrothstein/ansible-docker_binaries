@@ -33,6 +33,7 @@ dl_ver () {
     dl $ver docker linux x86_64
     printf "    %s:\n" mac
     dl $ver docker mac x86_64
+    dl $ver docker mac aarch64
 
     printf "docker_rootless_extras_checksums:\n"
     printf "  '%s':\n" $ver
@@ -43,4 +44,4 @@ dl_ver () {
     dl $ver docker-rootless-extras linux x86_64
 }
 
-dl_ver ${1:-20.10.13}
+dl_ver ${1:-20.10.15}
