@@ -1,4 +1,6 @@
 ---
+docker_binaries_os: '{{ ansible_system | lower }}'
+docker_binaries_platform: '{{ ansible_architecture }}'
 docker_binaries_name: 'docker-{{ docker_binaries_ver }}'
 docker_binaries_tgz: '{{ docker_binaries_name }}.tgz'
 docker_binaries_tmp_tgz: /tmp/{{ docker_binaries_tgz }}

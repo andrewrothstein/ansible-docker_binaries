@@ -1,4 +1,8 @@
 ---
+- include_role:
+    name: andrewrothstein.unarchive-deps
+- include_role:
+    name: andrewrothstein.bash
 - name: checking for installation in {{ docker_binaries_ver_install_dir }}
   become: yes
   stat:
