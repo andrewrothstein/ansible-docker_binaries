@@ -4,7 +4,7 @@
 - include_role:
     name: andrewrothstein.bash
 - name: checking for installation in {{ docker_binaries_ver_install_dir }}
-  become: yes
+  become: true
   stat:
     path: '{{ docker_binaries_ver_install_dir }}'
   changed_when: false
@@ -12,7 +12,7 @@
 - when: not docker_binaries_bin_dir.stat.exists
   block:
     - name: downloading  {{ docker_binaries_url }} to {{ docker_binaries_tmp_tgz }}
-      become: yes
+      become: true
       become_user: root
       get_url:
         url: '{{ docker_binaries_url }}'
@@ -21,7 +21,7 @@
         checksum: '{{ docker_binaries_checksum }}'
 
     - name: mkdir {{ docker_binaries_ver_install_dir }}
-      become: yes
+      become: true
       become_user: root
       file:
         path: '{{ docker_binaries_ver_install_dir }}'
@@ -29,27 +29,26 @@
         mode: 0755
 
     - name: unarchiving {{ docker_binaries_tmp_tgz }} to {{ docker_binaries_ver_install_dir }}
-      become: yes
+      become: true
       become_user: root
       unarchive:
-        remote_src: yes
-        src: /tmp/{{ docker_binaries_tgz }}
+        remote_src: true
+        src: '{{ docker_binaries_tmp_tgz }}'
         dest: '{{ docker_binaries_ver_install_dir }}'
         creates: '{{ docker_binaries_ver_install_subdir }}'
   always:
     - name: rm {{ docker_binaries_tmp_tgz }}
-      become: yes
+      become: true
       become_user: root
       file:
         path: '{{ docker_binaries_tmp_tgz }}'
         state: absent
 
 - name: link docker binaries from {{ docker_binaries_install_dir }} to {{ docker_binaries_ver_install_subdir }}
-  become: yes
+  become: true
   become_user: root
   with_items:
     - ctr
-    - containerd-shim
     - dockerd
     - docker-proxy
     - runc
