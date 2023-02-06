@@ -52,9 +52,4 @@ dl_ver() {
     dl_ver_rootless $ver >> defaults/main/rootless-checksums.yml
 }
 
-dl_ver 20.10.19
-#dl_ver 20.10.20
-#dl_ver 20.10.21
-#dl_ver 20.10.22
-#dl_ver 20.10.23
-#dl_ver ${1:-23.0.0}
+dl_ver ${1:-23.0.0}
