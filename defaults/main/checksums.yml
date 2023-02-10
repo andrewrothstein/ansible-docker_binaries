@@ -528,3 +528,18 @@ docker_binaries_checksums:
       x86_64: sha256:e793fa4531d5216107b84b87f191c582ee9378254f17b5aabcf0fa3010293ae7
       # https://download.docker.com/mac/static/stable/aarch64/docker-23.0.0.tgz
       aarch64: sha256:9da5c51771bf0f76bc5e278791dd9c9b6f7f4877617ac952dd5c88efb7a9ff10
+  '23.0.1':
+    linux:
+      # https://download.docker.com/linux/static/stable/aarch64/docker-23.0.1.tgz
+      aarch64: sha256:3865f837dbd951b19eeb5f7d87aada2e865b2017e9462fe389f0e5d9a438324d
+      # https://download.docker.com/linux/static/stable/armel/docker-23.0.1.tgz
+      armel: sha256:5eeabd663202019c096930192bf5e4c59fd86c12104cba5ea367231e20a5382e
+      # https://download.docker.com/linux/static/stable/armhf/docker-23.0.1.tgz
+      armhf: sha256:ea752d0513fcdf863a4b382615af2f49589e4146bd9508fbe00131dcfb13ac5e
+      # https://download.docker.com/linux/static/stable/x86_64/docker-23.0.1.tgz
+      x86_64: sha256:ec8a71e79125d3ca76f7cc295f35eea225f4450e0ffe0775f103e2952ff580f6
+    mac:
+      # https://download.docker.com/mac/static/stable/x86_64/docker-23.0.1.tgz
+      x86_64: sha256:2ee26389a9edc59dfa0029c4fd2b79fa15b87943219860302e954660dc63c8c0
+      # https://download.docker.com/mac/static/stable/aarch64/docker-23.0.1.tgz
+      aarch64: sha256:09c3d2789db3d20f8429b9c4d56c9e2307229777db8347eb4a5d2c5405e77efb
