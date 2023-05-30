@@ -52,4 +52,4 @@ dl_ver() {
     dl_ver_rootless $ver >> defaults/main/rootless-checksums.yml
 }
 
-dl_ver ${1:-24.0.1}
+dl_ver ${1:-24.0.2}
