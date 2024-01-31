@@ -1,9 +1,13 @@
 ---
-- hosts: all
+- name: Testing andrewrothstein.docker_binaries
+  hosts: all
   roles:
     - role: '{{ playbook_dir }}'
   tasks:
-    - command: /usr/local/bin/docker --version
+    - name: Executing 'docker --version'
+      ansible.builtin.command: /usr/local/bin/docker --version
+      changed_when: false
       register: docker_binaries_test_output
-    - debug:
+    - name: Output of 'docker --version'
+      ansible.builtin.debug:
         msg: '{{ docker_binaries_test_output.stdout }}'
