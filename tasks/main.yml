@@ -1,7 +1,4 @@
 ---
-- name: Installing andrewrothstein.unarchivedeps
-  ansible.builtin.include_role:
-    name: andrewrothstein.unarchivedeps
 - name: Installing andrewrothstein.bash
   ansible.builtin.include_role:
     name: andrewrothstein.bash
@@ -30,6 +27,10 @@
         path: '{{ docker_binaries_ver_install_dir }}'
         state: directory
         mode: '755'
+
+    - name: Installing andrewrothstein.unarchivedeps
+      ansible.builtin.include_role:
+        name: andrewrothstein.unarchivedeps
 
     - name: Unarchiving {{ docker_binaries_tmp_tgz }} to {{ docker_binaries_ver_install_dir }}
       become: true
