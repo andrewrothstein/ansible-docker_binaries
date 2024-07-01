@@ -530,3 +530,13 @@ docker_binaries_rootless_extras_checksums:
       armhf: sha256:375f6347f4d99dbdd32b5e72002964d18149dd3bcd470a1e02d90faa5e813c3d
       # https://download.docker.com/linux/static/stable/x86_64/docker-rootless-extras-27.0.2.tgz
       x86_64: sha256:b76a223c5cd5cef3be2e31536a057de3eae5c34c2499a5b87f3fd4ca235bc2b6
+  '27.0.3':
+    linux:
+      # https://download.docker.com/linux/static/stable/aarch64/docker-rootless-extras-27.0.3.tgz
+      aarch64: sha256:daaf45f2a6f2c1ecde320f9a9e3e3c031afc0cae5b7bbc876c84f74bbd4bb7b2
+      # https://download.docker.com/linux/static/stable/armel/docker-rootless-extras-27.0.3.tgz
+      armel: sha256:ab274dced95cfe9252728de8a5016a258f68a27f3da5c5ee107b5b3656d25fcf
+      # https://download.docker.com/linux/static/stable/armhf/docker-rootless-extras-27.0.3.tgz
+      armhf: sha256:153e65c7e5c9f6fa80d99f221ac6543cfa8ee24309c0345ffb3a2bf4c5e5022e
+      # https://download.docker.com/linux/static/stable/x86_64/docker-rootless-extras-27.0.3.tgz
+      x86_64: sha256:ecd68ff2bf4e177c111279b4cd4b3582ce25ca1abf1965575a8ab8afae4298af
