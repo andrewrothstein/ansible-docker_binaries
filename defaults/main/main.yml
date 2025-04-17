@@ -1,7 +1,7 @@
 ---
 docker_binaries_mirror: https://download.docker.com
 
-docker_binaries_ver: 28.0.4
+docker_binaries_ver: 28.1.0
 docker_binaries_channel: stable
 
 docker_binaries_install_dir: /usr/local/bin
